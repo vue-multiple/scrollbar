@@ -4,4 +4,4 @@ cd gh-pages
 git init
 git add -A
 git commit -m 'update gh-pages'
-git push -f git@github.com:zhutianyu <415960202@qq.com>/scrollbar.git master:gh-pages
+git push -f git@github.com:vue-multiple/scrollbar.git master:gh-pages

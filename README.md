@@ -1,4 +1,4 @@
-# input
+# scrollbar
 
 > Vue-based scrollbar component
 
@@ -12,7 +12,7 @@ npm install vue-multiple-scrollbar -S
 
 ```bash
 import Vue from 'vue'
-import VmInput from 'vue-multiple-scrollbar'
+import VmScrollbar from 'vue-multiple-scrollbar'
 
 Vue.component(VmScrollbar.name, VmScrollbar)
 ```
