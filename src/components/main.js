@@ -48,9 +48,8 @@ export default {
     if (gutter) {
       const gutterWith = `-${gutter}px`;
       const gutterStyle = `margin-bottom: ${gutterWith}; margin-right: ${gutterWith};`;
-
-      if (Array.isArray(this.wrapStyle)) {
-        style = toObject(this.wrapStyle);
+      if (Object.prototype.toString.call(this.wrapStyle) === '[object Object]') {
+        style = this.wrapStyle;
         style.marginRight = style.marginBottom = gutterWith;
       } else if (typeof this.wrapStyle === 'string') {
         style += gutterStyle;
@@ -75,7 +74,8 @@ export default {
     let nodes;
 
     if (!this.native) {
-      nodes = ([
+
+        nodes = ([
         wrap,
         <Bar
           move={ this.moveX }

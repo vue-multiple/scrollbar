@@ -16,7 +16,7 @@
         <div class="source">
           <div class="bigbox">
             <vm-scrollbar tag="ul"
-                          wrap-class="vm-scrollbar__box"
+                          :wrapStyle="{ height: '300px'}"
             >
                 <li class="smallbox" v-for="item in 6">{{ item }}</li>
             </vm-scrollbar>
@@ -29,6 +29,8 @@
         ul为内层内容盒子
         <br>
         外层盒子一般设置最大高度
+        <br>
+        高度只能是具体数值不可以是百分比
       </template>
     </demonstration>
     <div class="input-demo__item">
@@ -47,7 +49,7 @@
         <tbody>
         <tr>
           <td>wrapClass</i></td>
-          <td>外层container盒子类名</td>
+          <td>外层container盒子类名,高度不可是百分比,不可设置宽度</td>
           <td>string</td>
           <td>—</td>
           <td>—</td>
@@ -61,7 +63,7 @@
         </tr>
         <tr>
           <td>wrapStyle</i></td>
-          <td>外层container盒子样式</td>
+          <td>外层container盒子样式,高度不可是百分比,不可设置宽度</td>
           <td>object</td>
           <td>—</td>
           <td>—</td>
@@ -134,6 +136,7 @@
   }
   .bigbox{
     width: 100%;
+    height: 400px;
     /*height: 600px;*/
     overflow: hidden;
   }
@@ -149,7 +152,7 @@
     width: 1200px;
     font-size: 20px;
     text-indent: 20px;
-    background-color: #ddd;
+    /*background-color: #ddd;*/
   }
   #app {
     margin: 60px auto;

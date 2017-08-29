@@ -1,7 +1,7 @@
 export const sourcecode = `<template>
   <vm-scrollbar 
   tag="ul"
-  wrap-class="vm-scrollbar__box"
+  :wrapStyle="{ height: '300px'}"
   >
     <li class="smallbox" v-for="item in 6">{{ item }}</li>
   </vm-scrollbar>

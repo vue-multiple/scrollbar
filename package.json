@@ -1,8 +1,8 @@
 {
   "name": "vue-multiple-scrollbar",
   "description": "Vue-based scrollbar component",
-  "version": "1.0.0",
-  "author": "zhutianyu <415960202@qq.com>",
+  "version": "1.0.3",
+  "author": "vue-multiple",
   "main": "lib/scrollbar.js",
   "files": [
     "lib",
@@ -19,16 +19,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:zhutianyu <415960202@qq.com>/scrollbar.git"
+    "url": "git@github.com:vue-multiple/scrollbar.git"
   },
   "keywords": [
     "vue",
+    "vue-scrollbar",
     "scrollbar",
     "components"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhutianyu <415960202@qq.com>/scrollbar/issues"
+    "url": "https://github.com/vue-multiple/scrollbar/issues"
   },
   "unpkg": "lib/scrollbar.js",
   "dependencies": {
