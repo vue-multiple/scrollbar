@@ -1,7 +1,7 @@
 {
   "name": "vue-multiple-scrollbar",
   "description": "Vue-based scrollbar component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "vue-multiple",
   "main": "lib/scrollbar.js",
   "files": [
