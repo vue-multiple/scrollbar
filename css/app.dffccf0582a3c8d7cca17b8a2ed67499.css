@@ -1,0 +1,56 @@
+/* Scrollbar
+--------------------------*/
+.vm-scrollbar {
+  overflow: hidden;
+  position: relative;
+}
+.vm-scrollbar:hover .vm-scrollbar__bar,
+.vm-scrollbar:active .vm-scrollbar__bar,
+.vm-scrollbar:focus .vm-scrollbar__bar {
+  opacity: 1;
+  transition: opacity 340ms ease-out;
+}
+.vm-scrollbar__wrap {
+  overflow: scroll;
+}
+.vm-scrollbar__wrap--hidden-default::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.vm-scrollbar__thumb {
+  position: relative;
+  display: block;
+  size: 0;
+  cursor: pointer;
+  border-radius: inherit;
+  background-color: rgba(151, 168, 190, 0.3);
+  transition: 0.3s background-color;
+}
+.vm-scrollbar__thumb:hover {
+  background-color: rgba(151, 168, 190, 0.5);
+}
+.vm-scrollbar__bar {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+}
+.vm-scrollbar__bar.vertical {
+  width: 6px;
+  top: 2px;
+}
+.vm-scrollbar__bar.vertical > div {
+  width: 100%;
+}
+.vm-scrollbar__bar.horizontal {
+  height: 6px;
+  left: 2px;
+}
+.vm-scrollbar__bar.horizontal > div {
+  height: 100%;
+}
+
+/*# sourceMappingURL=app.dffccf0582a3c8d7cca17b8a2ed67499.css.map*/
